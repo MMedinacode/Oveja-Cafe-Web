@@ -3,7 +3,7 @@
    ============================================================
    ⚠️ SIN PRECIOS Y CARTA CORTA. No publican carta en ningún canal y Google
    tampoco recoge un rango de gasto. Los productos listados son únicamente
-   los que nombran sus reseñas reales y los que se ven en sus propias fotos.
+   los que nombran nuestras reseñas y los que se ven en sus propias fotos.
    Prefiero una carta corta y verdadera antes que una larga e inventada.
    ES LO PRIMERO QUE HAY QUE PEDIRLES.
    ============================================================ */
@@ -14,12 +14,12 @@ const MENU = {
     "items": [
       {
         "n": "Café",
-        "d": "\"Excelente lugar para tomarse un café y relajarse\" — reseña real",
+        "d": "\"Excelente lugar para tomarse un café y relajarse\" — reseña",
         "img": "mesa.jpg"
       },
       {
         "n": "Once completa",
-        "d": "\"Excelente lugar para disfrutar de una exquisita once\" — reseña real"
+        "d": "\"Excelente lugar para disfrutar de una exquisita once\" — reseña"
       }
     ]
   },
