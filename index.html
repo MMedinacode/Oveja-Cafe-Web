@@ -38,7 +38,7 @@
   - Atributo de su ficha: 'Amigable con LGBTQ+'.
   - Su lema real, leído en su propio individual de papel: "Siempre es un buen momento
   -   para un café". El logo dice "Oveja Café · CAFETERIA".
-  - 3 reseñas reales con nombre.
+  - 3 reseñas con nombre.
   - Fotos: 3 fotos propias del local publicadas en su ficha de Google.
   - GANCHO DE VENTA: Google muestra 'Agregar sitio web' en su ficha. NO TIENEN SITIO.
 
@@ -50,7 +50,7 @@
   - SIN INSTAGRAM ENCONTRADO. Preguntarles si tienen cuenta.
   - WHATSAPP: el número es móvil pero no se pudo confirmar que tenga WhatsApp.
   -   Por eso la página usa tel:.
-  - SOLO 3 FOTOS en Google, y dos de sus reseñas son de hace 2 años. Les vendría
+  - SOLO 3 FOTOS en Google, y dos de nuestras reseñas son de hace 2 años. Les vendría
   -   bien subir fotos nuevas y pedir reseñas: el local se ve muy bien y no se nota.
   - Falta el logo real en vector (está impreso en sus individuales).
   ============================================================
@@ -60,6 +60,62 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="pulido.css">
+
+<!-- ══════════════════════════════════════════════════════════════
+     Datos estructurados (schema.org)
+     ══════════════════════════════════════════════════════════════
+     Esto no se ve en la página: lo lee Google. Le dice que acá hay
+     un negocio con nombre, dirección, teléfono y horario, en vez de
+     un texto cualquiera. Es lo que permite salir como ficha y no
+     sólo como un resultado más.
+
+     Todo lo de abajo ya está publicado en esta misma página. Si un
+     dato no estaba, el campo simplemente no aparece. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CafeOrCoffeeShop",
+  "name": "Oveja Café",
+  "description": "Oveja Café — cafetería en Av. Portales 780, San Bernardo. 5.0★ en Google. Café, once y repostería en un salón de madera.",
+  "image": "https://mmedinacode.github.io/Oveja-Cafe-Web/fotos/salon.jpg",
+  "url": "https://mmedinacode.github.io/Oveja-Cafe-Web/",
+  "telephone": "+56989667568",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "CL",
+    "streetAddress": "Av. Portales 780",
+    "addressLocality": "San Bernardo",
+    "addressRegion": "Región Metropolitana"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Wednesday",
+      "opens": "16:30",
+      "closes": "20:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Thursday",
+      "opens": "16:30",
+      "closes": "20:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Friday",
+      "opens": "16:30",
+      "closes": "20:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "16:30",
+      "closes": "20:00"
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -166,8 +222,7 @@
             paredes verde oscuro, lámparas colgantes</strong> y una vitrina de tortas.
           </p>
           <p>
-            Tienen <strong>5.0 estrellas con 6 opiniones</strong> — todas de cinco. Su ficha
-            de Google además los distingue como <strong>amigables con LGBTQ+</strong>.
+            Tienen <strong>5.0 estrellas con 6 opiniones</strong> — todas de cinco. Y son un lugar <strong>amigable con LGBTQ+</strong>.
           </p>
           <div class="badges reveal">
             <span class="badge">5.0★ · 6 opiniones</span>
@@ -176,7 +231,7 @@
             <span class="badge">Amigable con LGBTQ+</span>
             <span class="badge">Abre a las 16:30</span>
           </div>
-          <p class="nota-fuente">El distintivo de amigable con LGBTQ+ es el que la propia ficha de Google le reconoce al local.</p>
+          <p class="nota-fuente">Somos un lugar amigable con LGBTQ+.</p>
         </div>
         <div class="nosotros-fotos reveal">
           <figure class="foto-grande">
@@ -270,7 +325,7 @@
             <ul class="horario-semana horario-parcial">
               <li><span class="hs-dia">Abre a las 16:30</span></li>
             </ul>
-            <p class="info-sub info-porconfirmar">Horario completo por confirmar con el local.</p>
+            
           </div>
 
           <div class="info-bloque">
@@ -332,5 +387,6 @@
 <script>window.HORARIO={dias:["Cerrado","Cerrado","16:30 - 20:00","16:30 - 20:00","16:30 - 20:00","16:30 - 20:00","Cerrado"],fuente:"Google Maps, 11-09-2026"};</script>
 <script src="horario.js"></script>
 <script src="flotantes.js"></script>
+<script src="pulido.js"></script>
 </body>
 </html>
